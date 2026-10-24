@@ -93,17 +93,29 @@ Another Cursor agent had already asked the same inbox, at 11:21 PM Pacific, abou
 
 Cousin Hermes is Nous Hermes Agent on the MacBook Pro / MWT1 (see the Hermes analysis section on Agent Commz, dated October 17, 2026). There is no separate Hermes inbox page, no Notion custom agent named Hermes, and no documented Hermes poller for Agent Commz. The v1 protocol on that page only names `grok` and `claude` as from/to.
 
-Live Hermes surfaces from this Cloud Agent VM (checked again at 11:40 PM Pacific on October 23, 2026) were all closed: A2A `127.0.0.1:9900`, OpenAI-compatible API `8642`, webhook `8644`, and desktop backend `54405`, plus A2A `3030` and mwt-bridge `8789`. Turning on Hermes A2A / peers / API (connection options A–C on that page) changes Mac Hermes config and needs a Founder GO. This agent did not change Hermes config.
+### Founder GO for option A (October 24, 2026)
+
+Dave gave a Founder GO in this Cursor chat (not on the Agent Commz inbox page) on October 24, 2026 morning Pacific: execute Hermes connection option A only (native A2A both ways — enable the Hermes A2A plugin on localhost:9900 with a separate token for Enginerd, register the 3030 server as a peer, one gateway restart, restore webhook config in the same restart). Scope excluded moving repos out of iCloud, changing the runaway spend-monitor crontab, killing Mac processes, spending money, deleting data, or revealing secrets.
+
+**Option A did not run.** This Cloud Agent VM is not the MacBook Pro. After the GO, a re-check at about 10:06 AM Pacific on October 24, 2026 found every candidate path closed:
+
+- Localhost: `127.0.0.1` ports `3030` (A2A), `8789` (mwt-bridge), `9900` (Hermes A2A), `8642` (OpenAI API), `8644` (webhook), and `54405` (desktop backend) all refused connections.
+- Documented home LAN from the MWT Network Map (September 22, 2026): `192.168.50.218` (MacBookPro) and `192.168.50.212` (MWT1) — SSH `22` and Hermes/A2A/bridge ports unreachable from this VM.
+- No Tailscale client, no `~/.ssh`, no `~/.hermes`, no Hermes MCP tools in this environment, and no linked Cursor Cloud environment that tunnels to the Macs.
+- Bitwarden MCP was unavailable (discovery error), so vault-backed host keys could not be used from here either.
+- Agent Commz Messages: no `hermes → grok` or `claude → grok` reply since the October 23 asks; `MSG 20261023-2339-grok-4` and `MSG 20261023-2334-grok-3` were still `NEW` on the October 24 morning re-read. The misplaced `MSG 20261023-2321-grok-2` under the Hermes analysis section was left untouched.
+
+**Single remaining blocker:** this Cloud Agent has no shell or network path onto the MacBook Pro (or MWT1) where Hermes lives. Option A requires running Hermes config and `hermes gateway restart` on that Mac. A prior Agent Commz project note already listed a persistent cross-machine tunnel as pending Founder GO; that tunnel is not present for this VM.
+
+Dave still needs either (1) run option A from a terminal / Enginerd session that already has Mac access, or (2) give Cloud Agents a durable reachability path to the Mac (for example Tailscale or a persistent SSH/A2A bridge) so option A can be executed from a box agent.
 
 Written request left on Agent Commz under Messages (same page Claude uses), extending the toggle convention with `hermes` as the recipient:
 
 - `MSG 20261023-2339-grok-4 | grok → hermes | NEW` at 11:39 PM Pacific on October 23, 2026.
 - Same read-only IP Man / IPMAN Jarvis dump ask as the Claude message (`20261023-2334-grok-3`): what IP MAN is vs Layer 4 vs WDI Jarvis, path names only for source notes, v0 interface slice, acceptance criteria, open Founder decisions. No secrets; no send/spend/delete/settings/credentials asks.
-- Status was still `NEW` on the next read. No `hermes → grok` reply was present. No Hermes-authored IPMAN project facts were found outside the October 17 connection analysis (which is not an IPMAN spec).
+- Status was still `NEW` on the October 24 morning re-read. No `hermes → grok` reply was present. No Hermes-authored IPMAN project facts were found outside the October 17 connection analysis (which is not an IPMAN spec).
 
-An earlier misplaced toggle under the Hermes analysis section (`MSG 20261023-2321-grok-2 | grok → claude | NEW`) was left untouched.
-
-Until Hermes replies or Dave enables a live channel (poller for `grok → hermes`, or Founder GO for A2A option A), Layer 4 remains the only verified written spec in this brief.
+Until Hermes replies on Agent Commz or option A is completed on the Mac, Layer 4 remains the only verified written spec in this brief.
 
 ## Sources
 
