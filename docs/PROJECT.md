@@ -85,13 +85,29 @@ Message posted for this repo:
 - Asks for a read-only dump of what IP MAN is, where the MWT1 / Obsidian notes live (path names only), the v0 slice, and any open Founder decisions.
 - Status was still `NEW` on the next read of the page. No `claude → grok` reply was present.
 
-The October 16 protocol test (`MSG 20261016-2230-grok-1`) is also still `NEW`. The Claude Desktop scheduled poller described on that page does not appear to be running. A Notion custom agent named Claude could not be started from this connection (`object_not_found`).
+The October 16 protocol test (`MSG 20261016-2230-grok-1`) is also still `NEW`. The Claude Desktop scheduled poller described on that page does not appear to be running. A Notion custom agent named Claude could not be started from this connection (`object_not_found`). Re-read at 11:40 PM Pacific on October 23, 2026: still no `claude → grok | NEW` reply.
 
 Another Cursor agent had already asked the same inbox, at 11:21 PM Pacific, about “IP MAN Jarvis” / “Jarvis OpenCore” versus this Layer 4 plan. That note says earlier runs scaffolded a local tree named `ipman-jarvis` and could not create a GitHub repo because the MediaWaveTechnology account integration cannot create repositories, and that the source notes they could not reach were named `Projects/Jarvis OpenCore/` and `IPMAN JARVIS`. Those paths are not on this VM. Treat them as pointers for Claude, not as files this repo contains.
+
+## Cousin Hermes
+
+Cousin Hermes is Nous Hermes Agent on the MacBook Pro / MWT1 (see the Hermes analysis section on Agent Commz, dated October 17, 2026). There is no separate Hermes inbox page, no Notion custom agent named Hermes, and no documented Hermes poller for Agent Commz. The v1 protocol on that page only names `grok` and `claude` as from/to.
+
+Live Hermes surfaces from this Cloud Agent VM (checked again at 11:40 PM Pacific on October 23, 2026) were all closed: A2A `127.0.0.1:9900`, OpenAI-compatible API `8642`, webhook `8644`, and desktop backend `54405`, plus A2A `3030` and mwt-bridge `8789`. Turning on Hermes A2A / peers / API (connection options A–C on that page) changes Mac Hermes config and needs a Founder GO. This agent did not change Hermes config.
+
+Written request left on Agent Commz under Messages (same page Claude uses), extending the toggle convention with `hermes` as the recipient:
+
+- `MSG 20261023-2339-grok-4 | grok → hermes | NEW` at 11:39 PM Pacific on October 23, 2026.
+- Same read-only IP Man / IPMAN Jarvis dump ask as the Claude message (`20261023-2334-grok-3`): what IP MAN is vs Layer 4 vs WDI Jarvis, path names only for source notes, v0 interface slice, acceptance criteria, open Founder decisions. No secrets; no send/spend/delete/settings/credentials asks.
+- Status was still `NEW` on the next read. No `hermes → grok` reply was present. No Hermes-authored IPMAN project facts were found outside the October 17 connection analysis (which is not an IPMAN spec).
+
+An earlier misplaced toggle under the Hermes analysis section (`MSG 20261023-2321-grok-2 | grok → claude | NEW`) was left untouched.
+
+Until Hermes replies or Dave enables a live channel (poller for `grok → hermes`, or Founder GO for A2A option A), Layer 4 remains the only verified written spec in this brief.
 
 ## Sources
 
 - [Jarvis-Style Local Desktop Assistant](https://app.notion.com/p/355ed1cc3348804e9f40f438a15c80c9) — Layer 4 plan, edited May 3, 2026 at 4:11 PM Pacific.
 - [Local Jarvis: Addendum: Security Hardening + Resilience (“Stay Alive”) Plan](https://app.notion.com/p/355ed1cc334880b8914fd8edbe7c1f15) — hardening addendum under the same parent. Not re-copied here.
 - [Local AI Setup Project](https://app.notion.com/p/354ed1cc33488085ac3fc5c20bb63a1d) — parent page for the local stack.
-- [Agent Commz](https://app.notion.com/p/3fced1cc33488100ba42fedc595fe3e3) — message `20261023-2334-grok-3`.
+- [Agent Commz](https://app.notion.com/p/3fced1cc33488100ba42fedc595fe3e3) — messages `20261023-2334-grok-3` (claude) and `20261023-2339-grok-4` (hermes).
